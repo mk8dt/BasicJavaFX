@@ -49,6 +49,7 @@ public class Main extends Application {
         stage.setTitle("Where's the squirrel?");
         stage.setScene(new Scene(mypane));
         stage.show();
+        
     }
    
    

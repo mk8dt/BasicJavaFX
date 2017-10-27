@@ -41,7 +41,6 @@ public class Main extends Application {
                 "../view/forest.fxml"
             )
         );
-    	loader.setController(new SetBlur());
         mypane = (Pane) loader.load();
 
         /**
@@ -52,23 +51,6 @@ public class Main extends Application {
         stage.show();
     }
    
-    /**
-     * la clase controladora que añade un efecto a la imagen
-     */
-    class SetBlur {
-    	
-    	@FXML
-        private ImageView imageView;       
-
-/**
- * la etiqueta FXML permite acceder al componente imageView ya creado en fxml
- */
-    	@FXML
-        public void initialize() {           
-                 imageView.setEffect(new GaussianBlur(5));
-        }
-    	
-    }
    
     /**
      * arranca la aplicación

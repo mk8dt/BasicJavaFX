@@ -4,14 +4,21 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="313.0" prefWidth="477.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="313.0" prefWidth="477.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Controlador">
   <children>
     <ImageView id="application.css" fx:id="imageView" fitHeight="224.0" fitWidth="400.0" layoutX="29.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 100;">
          <image>
             <Image url="@img/blueforest.jpg" />
          </image>
     </ImageView>
-      <Button layoutX="370.0" layoutY="240.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="63.0" styleClass="mybutton" stylesheets="@../application/application.css" />
+      <HBox layoutX="332.0" layoutY="257.0" spacing="25.0">
+         <children>
+            <Button fx:id="btnBlur" mnemonicParsing="false" onMouseClicked="#blur" text="blur" />
+            <Button fx:id="btnClip" mnemonicParsing="false" onMouseClicked="#clip" text="Clip" />
+         </children>
+      </HBox>
   </children>
 </AnchorPane>

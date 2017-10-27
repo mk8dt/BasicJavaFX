@@ -13,27 +13,17 @@ public class Controlador {
     private ImageView imageView; 
 	private Ellipse ellipse;
 	
-	@FXML
-    private Button btnBlur;
+    @FXML
+    private Button go;
 
+    @FXML
+    void go(MouseEvent event) {
+
+    System.exit(0);
+    	
+    }
     @FXML
     void blur(MouseEvent event) {
     	imageView.setEffect(new GaussianBlur(5));
-    }
-    @FXML
-    private Button btnClip;
-
-    @FXML
-    void clip(MouseEvent event) {
-
-    	ellipse = new Ellipse();
-    	
-    	ellipse.centerXProperty().setValue(70);
-    	ellipse.centerYProperty().setValue(70);
-    	ellipse.radiusXProperty().setValue(50);
-    	ellipse.radiusYProperty().setValue(50);
-    	
-    	imageView.setClip(ellipse);
-    	
     }
 }

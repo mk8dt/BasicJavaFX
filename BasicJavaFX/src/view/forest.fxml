@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 
-
 <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="313.0" prefWidth="477.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Controlador">
   <children>
     <ImageView id="application.css" fx:id="imageView" fitHeight="224.0" fitWidth="400.0" layoutX="29.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 100;">
@@ -17,7 +16,7 @@
       <HBox layoutX="332.0" layoutY="257.0" spacing="25.0">
          <children>
             <Button fx:id="btnBlur" mnemonicParsing="false" onMouseClicked="#blur" text="blur" />
-            <Button fx:id="btnClip" mnemonicParsing="false" onMouseClicked="#clip" text="Clip" />
+            <Button fx:id="btnGo" mnemonicParsing="false" onMouseClicked="#go" text="Go" />
          </children>
       </HBox>
   </children>

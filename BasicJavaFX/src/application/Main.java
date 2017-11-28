@@ -46,7 +46,7 @@ public class Main extends Application {
         /**
          * titula el stage y añade la escena al stage
          */
-        stage.setTitle("Where's the squirrel?");
+        stage.setTitle("Go , Blur , Clip");
         stage.setScene(new Scene(mypane));
         stage.show();
     }

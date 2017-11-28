@@ -6,23 +6,29 @@ import javafx.scene.effect.GaussianBlur;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Ellipse;
+import javafx.stage.Stage;
 
 public class Controlador {
 
 	@FXML
     private ImageView imageView; 
+	
 	private Ellipse ellipse;
 	
 	@FXML
     private Button btnBlur;
 
+	@FXML
+    private Button btnClip;
+
+    @FXML
+    private Button btnGO;
+
     @FXML
     void blur(MouseEvent event) {
     	imageView.setEffect(new GaussianBlur(5));
     }
-    @FXML
-    private Button btnClip;
-
+  
     @FXML
     void clip(MouseEvent event) {
 
@@ -35,5 +41,10 @@ public class Controlador {
     	
     	imageView.setClip(ellipse);
     	
+    }
+    @FXML
+    void go(MouseEvent event) {
+    	Stage thisStage = (Stage) btnGO.getScene().getWindow();
+    	thisStage.close();
     }
 }

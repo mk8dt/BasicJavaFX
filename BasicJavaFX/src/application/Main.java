@@ -37,10 +37,7 @@ public class Main extends Application {
     	 */
     	
     	FXMLLoader loader = new FXMLLoader(
-            getClass().getResource(
-                "../view/forest.fxml"
-            )
-        );
+            getClass().getResource( "../view/forest.fxml" ) );
         mypane = (Pane) loader.load();
 
         /**
